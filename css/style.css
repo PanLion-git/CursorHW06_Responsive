@@ -334,6 +334,7 @@ header {
 
 .div-border-top {
   background-repeat: repeat-x;
+  background-repeat: no-repeat;
   overflow: hidden;
   transform: translate(0, 20px);
   /* border: 1px solid green; */
@@ -343,6 +344,7 @@ header {
 .div-border-bottom {
   /* background-image: url("../img/border_bottom.svg"); */
   background-repeat: repeat-x;
+  background-repeat: no-repeat;
   /* height: 24px; */
   overflow: hidden;
   transform: translate(0, -25px);
@@ -350,6 +352,15 @@ header {
   /* border: 1px solid red; */
   border: 1px solid transparent;
 }
+
+.div-border-footer {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* transform: translate(0, 20px); */
+  /* border: 1px solid green; */
+  /* background-color: greenyellow; */
+}
+
 
 
 
