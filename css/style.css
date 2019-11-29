@@ -15,7 +15,6 @@
   --grey-color: #C2C2C2;
   --pink-color: #FCD3AC;
   --white-transparent-color: rgba(255, 255, 255, 0.5);
- 
 }
 
 /* Код для подключения шрифта в /css/stylename.css */
@@ -148,6 +147,9 @@ body {
 header {
   background-color: #FAFAFA;
   /* background-color: lightpink; */
+}
+.section-header {
+  display: none;
 }
 
 /* ---------------------------------------- */
