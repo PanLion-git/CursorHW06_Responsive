@@ -5,7 +5,7 @@
 } */
 :root {
   --yellow-color: #F9BA51;
-  --lightblue-color:#78C9C0;;
+  --lightblue-color:#78C9C0;
   --orange-color: #E75A31;
   --white-color: #FFFFFF;
   --black-color: #000000;
@@ -306,20 +306,22 @@ header {
 
   /* background-color: lightblue; */
 }
-.code-ukraine {
+.code-country {
   font-weight: normal;
 }
 .div-top-menu-contacts-mts {
   display: flex;
-  /* flex-direction: row; */
 }
+/* .div-top-menu-contacts-mts-icon {
+} */
 .div-top-menu-contacts-mts-number {
   margin-left: 5px;
 }
 .div-top-menu-contacts-life {
   display: flex;
-  /* flex-direction: row; */
 }
+/* .div-top-menu-contacts-life-icon {
+} */
 .div-top-menu-contacts-life-number {
   margin-left: 5px;
 }
@@ -486,7 +488,7 @@ header {
   font-weight: bold;
   text-decoration: underline;
   color: red;
-  font-size: 20px
+  font-size: 20px;
   background-color: aqua;
 }
 
