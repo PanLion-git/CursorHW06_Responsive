@@ -109,8 +109,6 @@
   font-style: normal;
   font-weight: normal;
 }
-
-
 @font-face {
   font-family: "BebasNeue Light";
   src: url("../fonts/BebasNeue/BebasNeue\ Light.otf");
@@ -146,7 +144,6 @@ body {
 }
 header {
   background-color: #FAFAFA;
-  /* background-color: lightpink; */
 }
 .section-header {
   display: none;
@@ -159,28 +156,18 @@ header {
 .section-top-menu {
   margin: 0 auto;
   margin-top: 10px;
-  /* margin-bottom: 10px; */
   max-width: 1300px;
-  /* padding: 0 60px; */
 
   display: grid;
-  /* grid-template-columns: 1fr 3fr 1fr; */
   grid-template-columns: 300px 2fr 170px;
   grid-template-areas: 
   "div-top-menu-logo-title   nav-top-menu-option   div-top-menu-contacts";
-
-  /* auto-fit */
-  /* auto-fill */
-
   grid-gap: 10px;
 }
 
 .div-top-menu-logo-title {
   grid-area: div-top-menu-logo-title;
   display: flex;
-  /* flex-direction: row; */
-  
-  /* background-color: lightgreen; */
 }
 .div-top-menu-logo {
 }
@@ -192,29 +179,22 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 .div-top-menu-title-kylie {
   /* From Mak */
-  /* width: 231px;
-  height: 35px; */
   font-size: 29px;
   letter-spacing: 0px;
   line-height: 29px;
   color: #333333;
-  /* font-family: "Bebas Neue"; */
-  /* font-family: "Arial"; */
-
   font-family: "BebasNeue Light";
   font-weight: 700;
   /* From Mak */
+  
   /* font-stretch: inherit | ultra-condensed | extra-condensed | condensed | semi-condensed | normal | semi-expanded | expanded | extra-expanded | ultra-expanded */
   font-stretch: extra-condensed;
 }
 .div-top-menu-title-lip-stick {
   /* From Mak */
-  /* width: 215px;
-  height: 15px; */
   font-size: 14px;
   letter-spacing: 0px;
   line-height: 19px;
@@ -227,45 +207,25 @@ header {
 
 
 .nav-top-menu-option {
-  /* padding-left: 10px;
-  padding-right: 0px; */
-  /* width: 500px; */
   grid-area: nav-top-menu-option;
   display: flex;
   align-items: center;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  /* background-color: lightgrey; */
-  /* display: none; */
-
-  
 }
 .nav-top-menu-option a {
-  /* margin-left: 5px;
-  margin-right: 5px; */
   padding: 12px 2px;
   text-decoration: none;
   border-radius: 8px;
   
   /* From Mak */
-  /* width: 1560px;
-  height: 21px; */
   font-size: 16px;
   letter-spacing: -1px;
   line-height: 24px;
-  
   color: #656463;
   font-family: "GothamProLight";
   text-align: center;
   /* From Mak */
-  
-  
-}
-
-.nav-top-menu-option a:active {
-  /* background-color: rgb(229, 220, 220); */
 }
 
 .nav-top-menu-option a:focus {
@@ -285,28 +245,20 @@ header {
 
 .nav-top-menu-option-order {}
 
-
-
 .div-top-menu-contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
   grid-area: div-top-menu-contacts;
   font-weight: bold;
   
   /* From Mak */
-  /* width: 230px;
-  height: 66px; */
   font-size: 14px;
   line-height: 28px;
   color: #333333;
   font-family: "GothamProLight";
-  /* font-weight: 300; */
   text-align: right;
   /* From Mak */
-
-  /* background-color: lightblue; */
 }
 .code-country {
   font-weight: normal;
@@ -314,18 +266,58 @@ header {
 .div-top-menu-contacts-mts {
   display: flex;
 }
-/* .div-top-menu-contacts-mts-icon {
-} */
 .div-top-menu-contacts-mts-number {
   margin-left: 5px;
 }
 .div-top-menu-contacts-life {
   display: flex;
 }
-/* .div-top-menu-contacts-life-icon {
-} */
 .div-top-menu-contacts-life-number {
   margin-left: 5px;
+}
+
+
+
+/* ---------------------------------------- */
+/* Test section --------------------------- */
+/* ---------------------------------------- */
+
+
+.section-test {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "div-border-top div-border-top"
+  "section-test-kylie section-test-photo"
+  "section-test-info section-test-photo"
+  "section-test-button section-test-photo"
+  "div-border-bottom div-border-bottom"
+  ;
+}
+.section-test-kylie {
+  grid-area: section-test-kylie;
+  /* border: 1px solid red; */
+}
+
+.section-test-info {
+  grid-area: section-test-info;
+  /* border: 1px solid green; */
+}
+
+.section-test-button {
+  grid-area: section-test-button;
+  /* border: 1px solid blue; */
+}
+
+.section-test-photo {
+  grid-area: section-test-photo;
+  /* border: 1px solid orange; */
+}
+
+.div-photo {
+  padding-top: 100px;
+  padding-left: 50px;
+  height: 320px;
 }
 
 
@@ -337,34 +329,35 @@ header {
 
 
 .div-border-top {
+  grid-area: div-border-top;
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   overflow: hidden;
+  z-index: 1;
   transform: translate(0, 20px);
-  /* border: 1px solid green; */
-  /* background-color: greenyellow; */
+  border: 1px solid green;
+  background-color: red;
+  border: 1px solid transparent;
+  background-color: transparent;
 }
 
 .div-border-bottom {
-  /* background-image: url("../img/border_bottom.svg"); */
+  grid-area: div-border-bottom;
   background-repeat: repeat-x;
   background-repeat: no-repeat;
-  /* height: 24px; */
   overflow: hidden;
-  transform: translate(0, -25px);
-  background-color: transparent;
-  /* border: 1px solid red; */
+  z-index: 1;
+  transform: translate(0, -18px);
+  border: 1px solid red;
+  background-color: green;
   border: 1px solid transparent;
+  background-color: transparent;
 }
 
 .div-border-footer {
   background-repeat: no-repeat;
   overflow: hidden;
-  /* transform: translate(0, 20px); */
-  /* border: 1px solid green; */
-  /* background-color: greenyellow; */
 }
-
 
 
 
@@ -377,70 +370,67 @@ header {
 .section-base {
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-  "div-section-base-text   div-section-base-photo";
-   grid-gap: 10px;
+  "div-section-base-text-lip-stick-kylie"
+  "div-section-base-text-information"
+  "div-section-base-photo"
+  "div-section-base-text-button"
+  ;
+  grid-gap: 10px;
 
-  /* background-image: url("../img/Hyeig.svg"); */
-  /* background-position-x: -600px;
-  background-size: cover; */
   padding-top: 30px;
-  /* padding-bottom: 10px; */
   min-height: 450px;
-  /* max-height: 600px; */
-  /* border: 1px solid blueviolet; */
   background-color: #dee1d3;
+  display: none;
 
 }
 .div-section-base-text {
-  grid-area: div-section-base-text;
   padding-left: 30px;
   padding-right: 30px;
-  /* border: 1px solid red; */
-
 }
 .div-section-base-text-lip-stick-kylie {
+  grid-area: div-section-base-text-lip-stick-kylie;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
   justify-content: center;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   /* From Mak */
-  /* width: 593px;
-  height: 27px; */
   font-size: 36px;
   line-height: 48px;
   color: #333333;
   font-family: "Bebas Neue";
   font-family: "BebasNeue Light";
-  /* BebasNeue Light */
   font-weight: 700;
   /* From Mak */
-  /* background-color: lime; */
 }
 .div-section-base-text-lip-stick {
-  margin: 10px;
+  margin-right: 10px;
 }
-
 .div-section-base-text-kylie {
-  margin: 10px;
+  margin-left: 10px;
   color: #d4416a;
 }
 
 .div-section-base-text-information {
+  grid-area: div-section-base-text-information;
+
+
   justify-content: center;
   text-align: justify;
   
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
   padding-left: 50px;
   padding-right: 50px;
 
   /* From Mak */
-  /* width: 471px;
-  height: 216px; */
   font-size: 18px;
   line-height: 36px;
   color: #333333;
@@ -450,33 +440,28 @@ header {
 }
 
 .div-section-base-text-button {
-  /* border: 1px solid green; */
+  grid-area: div-section-base-text-button;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .div-section-base-text-button a {
   margin: 0 auto;
-  
-  /* width: 301px;
-  height: 60px; */
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 3px;
   border: 3px solid  #bb4464;
   border-top: none;
   border-left: none;
   background-image: linear-gradient(0deg, #b93d5f 0%, rgba(185,61,95,0) 100%);
 
-
   text-decoration: none;
   padding: 10px 50px;
 
   display: inline-block;
-  /* display: block;
-  width: 200px; */
 
   /* From Mak */
-  /* width: 301px;
-  height: 19px; */
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
@@ -495,68 +480,65 @@ header {
 }
 
 .div-section-base-text-button a:active {
-  /* transition: transform 2s, background-color 2s, font-weight 2s, font-size 2s; */
-  /* transform: translate(15px, 15px) rotate(20deg); */
-
   /* Ефект натискання кнопки */
   transform: translate(3px, 3px);
   /* Не створює ефект стрибання нижніх об'єктів */
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-
 }
 
 .div-section-base-photo {
   grid-area: div-section-base-photo;
-  /* border: 1px solid saddlebrown; */
   position: relative;
-  width: 645px;
-  max-height: 600px;
-  /* display: flex;
-  align-items: center; */
 }
+
+.photo-container {
+  position: absolute;
+  bottom: 0;
+  width: 645px;
+  left: 50px;
+  max-height: 600px;
+}
+
 .div-section-base-photo img {
-  /* display: inline-block; */
   position: absolute;
 }
 
 .img-hyeig-background {
   width: 100%;
-  /* border: 1px solid green; */
+  width: 75%;
 }
 .img-lip-stick-top {
-  /* position: absolute; */
   width: 26.29%;
-  top: 80px;
+  width: 19.72%;
+  top: 60px;
 }
 .img-star_pink {
-  /* position: absolute; */
   width: 15.54%;
-  left: -55px;
-  top: 50px;
+  width: 11.66%;
+  left: -35px;
+  top: 30px;
 }
 .img-star_transparent {
-  /* position: absolute; */
   width: 13.60%;
-  left: -48.5px;
-  top: 55px;
+  width: 10.20%;
+  left: -31px;
+  top: 34px;
 }
-
 .div-section-base-photo-price {
   position: absolute;
   width: 13.60%;
-  left: -49px;
-  top: 73px;
+  width: 10.20%;
+  left: -32px;
+  top: 50px;
   
-  font-size: 24px;
+  font-size: 16px;
   color: #ffffff;
   font-family: "GothamProLight";
   font-weight: 900;
   text-align: center;
   
   transform: rotate(30deg);
-    
-  /* border: 1px solid blue; */
 }
 
 /* ---------------------------------------- */
@@ -566,14 +548,13 @@ header {
 .section-bottom {
   min-height: 300px;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .div-about-kylie-title {
+  grid-area: div-about-kylie-title;
 
   /* From Mak */
-  /* width: 659px;
-  height: 48px; */
   font-size: 36px;
   line-height: 48px;
   color: #d4416a;
@@ -582,25 +563,25 @@ header {
   text-align: center;
   /* From Mak */
 
-
 }
 
 .div-about-kylie {
-
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas:
-  "div-about-kylie-photo div-about-kylie-information";
+  "div-about-kylie-title div-about-kylie-title"
+  "div-about-kylie-photo div-about-kylie-information"
+  "section-bottom-button section-bottom-button";
   grid-gap: 10px;
 }
 
 .div-about-kylie-photo {
   grid-area: div-about-kylie-photo;
   min-width: 400px;
-  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
 }
 .div-about-kylie-photo-border {
-  /* padding: 50px; */
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -621,15 +602,11 @@ header {
   margin-right: 150px;
 
   /* From Mak */
-  /* width: 738px;
-  height: 194px; */
   font-size: 16px;
   line-height: 36px;
   color: #333333;
   font-family: "GothamProLight";
   /* From Mak */
-
-  /* background-color: lightslategray; */
 }
 
 .img-lip-stick-bottom {
@@ -638,28 +615,22 @@ header {
   right: 50px;
 }
 
-
-.div-about-kylie-title {
-  grid-area: div-about-kylie-title;
+.section-bottom-button {
+  grid-area: section-bottom-button;
 }
 
 
+
 .div-section-base-text-lip-stick-kylie {
-  /* align-items: center; */
   grid-area: div-section-base-text-lip-stick-kylie;
-  /* display: none; */
 }
 
 .div-section-base-text-button {
   grid-area: div-section-base-text-button;
-  /* margin-bottom: 30px; */
-  /* display: none; */
 }
 
 .div-section-base-text-information {
   grid-area: div-section-base-text-information;
-  /* margin-bottom: 30px; */
-  /* display: none; */
 }
 
 @media (max-width: 1000px) {
@@ -673,29 +644,39 @@ header {
     ;
   }
 
-  .div-top-menu-logo-title {
-    /* background-color: lightskyblue; */
-  }
-  .nav-top-menu-option {
-    /* background-color: lightgreen; */
-  }
-  .div-top-menu-contacts {
-    /* background-color: orangered; */
-  }
   .div-section-base-text-lip-stick-kylie {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5px;
   }
+
   .img-hyeig-background {
-    /* width: 90%; */
     background-position-x: center ;
   }
 
   .img-lip-stick-bottom {
     display: none;
   }
+
+  .div-section-base-text-button {
+    min-height: 300px;
+  }
+  .div-section-base-text-button-colapse {
+    min-height: 0px;
+  }
+  .div-about-kylie-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
 }
 
 
@@ -717,14 +698,9 @@ header {
     flex-direction: row;
     justify-content: space-around;
   }
-
   .nav-top-menu-option {
     display: none;
   }
-
-
-
- 
   .section-base {
     display: grid;
     grid-template-columns: 1fr;
@@ -733,81 +709,172 @@ header {
     "div-section-base-text-button"
     "div-section-base-text-lip-stick-kylie"
     ;
-
     grid-gap: 0px;
   }
 
   .div-section-base-text {
     max-width: 450px;
-    /* background: blue; */
-  }
-
-  .div-section-base-text-lip-stick-kylie {
-    /* align-items: center; */
-    /* grid-area: div-section-base-text-lip-stick-kylie; */
-    /* display: none; */
   }
   
   .div-section-base-text-button {
-    /* grid-area: div-section-base-text-button; */
     margin-bottom: 30px;
-    /* display: none; */
   }
 
   .div-section-base-text-information {
-    /* grid-area: div-section-base-text-information; */
     margin-bottom: 30px;
-    /* display: none; */
   }
-
-
 
   .div-section-base-photo {
-    /* grid-area: div-section-base-photo; */
-    max-width: 350px;
-    min-height: 100px;
-    /* border: 1px solid lightsteelblue;
-    background: lightpink; */
-    /* overflow: hidden; */
-    display: none;
-  }
-
-  .div-section-base-photo-cost-lip-stick {
-    /* border: 1px solid blue; */
-    /* display: hide; */
+    position: relative;
   }
 
   .img-hyeig-background {
     display: none;
-    /* display: hide; */
   }
-
-  .div-section-base-photo-cost-lip-stick {
-    /* grid-area: div-section-base-photo-cost-lip-stick; */
-  }
-
-
-
-  .div-border-top {
-    display: none;
-  }
-  .div-border-bottom {
-    display: none;
-  }
-
-
-
-
 
   .div-about-kylie {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "div-about-kylie-photo"
     "div-about-kylie-title"
+    "div-about-kylie-photo"
     "div-about-kylie-information"
+    "section-bottom-button"
     ;
     grid-gap: 0px;
+  }
+
+}
+
+
+
+
+@media (max-width: 1250px) {
+  .div-photo {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .div-photo {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .div-photo {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .div-photo {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .div-photo {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-test {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "section-test-kylie"
+    "div-border-top"
+    "section-test-photo"
+    "div-border-bottom"
+    "section-test-info"
+    "section-test-button"
+    ;
+  }
+
+  .section-test {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "section-test-kylie  section-test-kylie"
+    "div-border-top      div-border-top"
+    "section-test-button section-test-photo"
+    "div-border-bottom   div-border-bottom"
+    "section-test-info   section-test-info"
+    ;
+  }
+
+  .div-about-kylie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "div-about-kylie-title div-about-kylie-title"
+    "div-about-kylie-photo div-about-kylie-information"
+    "section-bottom-button div-about-kylie-information"
+    ;
+    grid-gap: 0px;
+  }
+
+  .div-photo {
+    padding-top: 25px;
+    padding-left: 400px;
+    padding-left: 0px;
+  }
+
+  .div-section-base-text-lip-stick {
+    margin-right: 0px;
+  }
+  .div-section-base-text-kylie {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .div-photo {
+    padding-left: 350px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .div-photo {
+    padding-left: 300px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .div-photo {
+    padding-left: 300px;
+    padding-left: 100px;
+  }
+
+  .section-test {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "section-test-kylie"
+    "div-border-top"
+    "section-test-photo"
+    "div-border-bottom"
+    "section-test-button"
+    "section-test-info"
+    ;
+  }
+
+  .div-section-base-text-button {
+    min-height: 0px;
+  }
+
+  .div-about-kylie {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "div-about-kylie-title"
+    "div-about-kylie-photo"
+    "div-about-kylie-information"
+    "section-bottom-button";
+    grid-gap: 10px;
   }
 
   .div-about-kylie-photo {
@@ -818,9 +885,6 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* border: 1px solid red; */
-    
-    /* align-items: center; */
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -829,11 +893,38 @@ header {
 
 
 
+@media (max-width: 700px) {
+  .div-photo {
+    padding-left: 250px;
+    padding-left: 75px;
+  }
+}
 
+@media (max-width: 600px) {
+  .div-photo {
+    padding-left: 200px;
+    padding-left: 0px;
+  }
+}
 
+@media (max-width: 500px) {
+  .section-test {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "section-test-kylie"
+    "div-border-top"
+    "section-test-photo"
+    "div-border-bottom"
+    "section-test-info"
+    "section-test-button"
+    ;
+  }
 
-
-
+  .div-photo {
+    padding-top: 0px;
+    padding-left: 150px;
+  }
+}
 
 /* ---------------------------------------- */
 /* Footer --------------------------------- */
@@ -844,7 +935,6 @@ header {
   max-width: 1300px;
   background-color: #fff;
   margin: 0 auto;
-  /* padding: 0 60px; */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 
